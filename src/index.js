@@ -4,7 +4,7 @@ const app = new Koa();
 const PORT = process.env.PORT;
 
 app.use(async ctx => {
-  ctx.body = 'Aplicación web muy simple';
+  ctx.body = 'Buenas noches Chile';
 });
 
 app.listen(PORT, () => {
