@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: simple-web-app
+    image: simple-web-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      PORT: ${PORT}
+    ports:
+      - "${PORT}:${PORT}"
